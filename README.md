@@ -9,7 +9,7 @@
 <!-- badges: end -->
 
 [nreltools](https://github.com/andypicke/nreltools) provides functions
-for working with APIs and tools in the [NREL Developer
+for working with APIs and tools from the [NREL Developer
 Network](\https://developer.nrel.gov/) in R.
 
 To use the tools you will need to [sign up for a free API
@@ -28,13 +28,13 @@ devtools::install_github("andypicke/nreltools")
 #> Downloading GitHub repo andypicke/nreltools@HEAD
 #> 
 #> ── R CMD build ─────────────────────────────────────────────────────────────────
-#> * checking for file ‘/private/var/folders/dr/yjpc9xm95sb7_d0czp37sqb00000gn/T/RtmpkCTgCB/remotesd9862dcb5492/andypicke-nreltools-ee7e280/DESCRIPTION’ ... OK
+#> * checking for file ‘/private/var/folders/dr/yjpc9xm95sb7_d0czp37sqb00000gn/T/Rtmp1aqJnL/remotesede24d7218dd/andypicke-nreltools-580a902/DESCRIPTION’ ... OK
 #> * preparing ‘nreltools’:
 #> * checking DESCRIPTION meta-information ... OK
 #> * checking for LF line-endings in source and make files and shell scripts
 #> * checking for empty or unneeded directories
 #> * building ‘nreltools_0.0.0.9000.tar.gz’
-#> Installing package into '/private/var/folders/dr/yjpc9xm95sb7_d0czp37sqb00000gn/T/Rtmpd5uqDg/temp_libpathd69c4072d371'
+#> Installing package into '/private/var/folders/dr/yjpc9xm95sb7_d0czp37sqb00000gn/T/RtmppFWCrg/temp_libpathddc85342798c'
 #> (as 'lib' is unspecified)
 ```
 

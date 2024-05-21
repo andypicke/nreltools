@@ -19,7 +19,7 @@ knitr::opts_chunk$set(
 [![R-CMD-check](https://github.com/andypicke/nreltools/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/andypicke/nreltools/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-[nreltools](https://github.com/andypicke/nreltools) provides functions for working with APIs and tools in the [NREL Developer Network](\https://developer.nrel.gov/) in R. 
+[nreltools](https://github.com/andypicke/nreltools) provides functions for working with APIs and tools from the [NREL Developer Network](\https://developer.nrel.gov/) in R. 
 
 To use the tools you will need to [sign up for a free API key](https://developer.nrel.gov/signup/). The package functions assume by defauls that you have stored your API Key as "NREL_DEVELOPER_API_KEY" in you .Renviron file.
 
