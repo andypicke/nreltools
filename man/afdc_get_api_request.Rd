@@ -4,10 +4,12 @@
 \alias{afdc_get_api_request}
 \title{Make API GET request and return data}
 \usage{
-afdc_get_api_request(query_url)
+afdc_get_api_request(query_url, api_key = Sys.getenv("NREL_DEVELOPER_API_KEY"))
 }
 \arguments{
 \item{query_url}{URL for the API query}
+
+\item{api_key}{API key (default is Sys.getenv("NREL_DEVELOPER_API_KEY"))}
 }
 \value{
 df: data from the API response
