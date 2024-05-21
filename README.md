@@ -8,14 +8,34 @@
 [![R-CMD-check](https://github.com/andypicke/nreltools/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/andypicke/nreltools/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
-The goal of nreltools is to …
+[nreltools](https://github.com/andypicke/nreltools) provides functions
+for working with APIs and tools in the [NREL Developer
+Network](\https://developer.nrel.gov/) in R.
+
+To use the tools you will need to [sign up for a free API
+key](https://developer.nrel.gov/signup/). The package functions assume
+by defauls that you have stored your API Key as “NREL_DEVELOPER_API_KEY”
+in you .Renviron file.
 
 ## Installation
 
 You can install the development version of nreltools like so:
 
 ``` r
-# FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
+# install.packages("devtools")
+devtools::install_github("andypicke/nreltools")
+#> Using GitHub PAT from the git credential store.
+#> Downloading GitHub repo andypicke/nreltools@HEAD
+#> 
+#> ── R CMD build ─────────────────────────────────────────────────────────────────
+#> * checking for file ‘/private/var/folders/dr/yjpc9xm95sb7_d0czp37sqb00000gn/T/RtmpkCTgCB/remotesd9862dcb5492/andypicke-nreltools-ee7e280/DESCRIPTION’ ... OK
+#> * preparing ‘nreltools’:
+#> * checking DESCRIPTION meta-information ... OK
+#> * checking for LF line-endings in source and make files and shell scripts
+#> * checking for empty or unneeded directories
+#> * building ‘nreltools_0.0.0.9000.tar.gz’
+#> Installing package into '/private/var/folders/dr/yjpc9xm95sb7_d0czp37sqb00000gn/T/Rtmpd5uqDg/temp_libpathd69c4072d371'
+#> (as 'lib' is unspecified)
 ```
 
 ## Example
@@ -26,27 +46,3 @@ This is a basic example which shows you how to solve a common problem:
 library(nreltools)
 ## basic example code
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
