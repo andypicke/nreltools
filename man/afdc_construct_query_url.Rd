@@ -8,7 +8,7 @@ afdc_construct_query_url(
   fuel_type = "ELEC",
   wh_state = "CO",
   limit = "all",
-  api_key = Sys.getenv("AFDC_KEY")
+  api_key = Sys.getenv("NREL_DEVELOPER_API_KEY")
 )
 }
 \arguments{
@@ -18,7 +18,7 @@ afdc_construct_query_url(
 
 \item{limit}{Number of rows to return; default is "all"}
 
-\item{api_key}{API key (default is Sys.getenv("AFDC_KEY"))}
+\item{api_key}{API key (default is Sys.getenv("NREL_DEVELOPER_API_KEY"))}
 }
 \value{
 query_url URL for API request
