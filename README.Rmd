@@ -28,14 +28,45 @@ To use the tools you will need to [sign up for a free API key](https://developer
 You can install the development version of nreltools like so:
 ```{r}
 # install.packages("devtools")
-devtools::install_github("andypicke/nreltools")
+#devtools::install_github("andypicke/nreltools")
 ```
 
-## Example
+## Examples
 
-This is a basic example which shows you how to solve a common problem:
+### Get EV charging stations for one state
 
 ```{r example}
+
 library(nreltools)
-## basic example code
+library(dplyr)
+
+ev <- nreltools::afdc_ev_get_stations(wh_state = "CO")
+
+glimpse(ev)
+
 ```
+
+### Plot number of stations opened by year
+
+```{r}
+
+library(ggplot2)
+
+ev |>
+  count(open_year) |>
+  ggplot(aes(open_year, n)) +
+  geom_col()
+
+
+```
+
+
+### Add indicators for connector types at each station
+```{r}
+
+ev <- ev |> nreltools::afdc_add_connector_type_indicators()
+
+glimpse(ev)
+
+```
+
